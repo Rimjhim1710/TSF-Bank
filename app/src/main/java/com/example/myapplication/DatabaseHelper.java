@@ -18,18 +18,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME +" (PHONENUMBER INTEGER PRIMARY KEY ,NAME TEXT,BALANCE DECIMAL,EMAIL VARCHAR,ACCOUNT_NO VARCHAR,IFSC_CODE VARCHAR)");
+         db.execSQL("create table " + TABLE_NAME +" (PHONENUMBER INTEGER PRIMARY KEY ,NAME TEXT,BALANCE DECIMAL,EMAIL VARCHAR,ACCOUNT_NO VARCHAR,IFSC_CODE VARCHAR)");
         db.execSQL("create table " + TABLE_NAME1 +" (TRANSACTIONID INTEGER PRIMARY KEY AUTOINCREMENT,DATE TEXT,FROMNAME TEXT,TONAME TEXT,AMOUNT DECIMAL,STATUS TEXT)");
-        db.execSQL("insert into user_table values(1234567890,'Shelly',9472.00,'silentkiller.02@gmail.com','XXXXXXXXXXXX1234','ABC09876543')");
-        db.execSQL("insert into user_table values(2345678901,'Teddy',582.67,'harshit.03@gmail.com','XXXXXXXXXXXX2341','BCA98765432')");
-        db.execSQL("insert into user_table values(3456789012,'Mona',1359.56,'li.04@gmail.com','XXXXXXXXXXXX3412','CAB87654321')");
-        db.execSQL("insert into user_table values(4567890123,'Robin',1500.01,'Rajput.05@gmail.com','XXXXXXXXXXXX4123','ABC76543210')");
-        db.execSQL("insert into user_table values(5678901234,'Ankur',2603.48,'theviralboytvb@gmail.com','XXXXXXXXXXXX2345','BCA65432109')");
-        db.execSQL("insert into user_table values(6789012345,'Shipra',945.16,'Kuship@gmail.com','XXXXXXXXXXXX3452','CAB54321098')");
-        db.execSQL("insert into user_table values(7890123456,'Aman',5936.00,'nashedi.08@gmail.com','XXXXXXXXXXXX4523','ABC43210987')");
-        db.execSQL("insert into user_table values(8901234567,'Ashish',857.22,'karuye.09@gmail.com','XXXXXXXXXXXX5234','BCA32109876')");
-        db.execSQL("insert into user_table values(9012345678,'Dhakre',4398.46,'homeminister@gmail.com','XXXXXXXXXXXX3456','CAB21098765')");
-        db.execSQL("insert into user_table values(1234567809,'Yash',273.90,'yes.01@gmail.com','XXXXXXXXXXXX4563','ABC10987654')");
+        db.execSQL("insert into user_table values(7544567890,'Rashi',5472.00,'rashisingh.02@gmail.com','XXXXXXXXXXXX6432','NGB589394950')");
+        db.execSQL("insert into user_table values(4658313789,'Mansi',8082.67,'mansi.03@gmail.com','XXXXXXXXXXXX8653','ASA96836722')");
+        db.execSQL("insert into user_table values(7633589432,'Tina',1349.56,'tinasharma@gmail.com','XXXXXXXXXXXX9752','THB57393029')");
+        db.execSQL("insert into user_table values(9472638486,'Rahul',1500.01,'Rajput.rahul05@gmail.com','XXXXXXXXXXXX1357','FIJ68747483')");
+        db.execSQL("insert into user_table values(2948694293,'Aakash',2653.48,'theaakash@gmail.com','XXXXXXXXXXXX8654','NSM63749593')");
+        db.execSQL("insert into user_table values(1928486900,'Priya',9456.00,'priyass@gmail.com','XXXXXXXXXXXX6424','FJW38598395')");
+        db.execSQL("insert into user_table values(6938939495,'Abhishek',5936.76,'abhi.08@gmail.com','XXXXXXXXXXXX0394','KTL68490328')");
+        db.execSQL("insert into user_table values(3049584839,'Anjali',8572.45,'anjaliii.09@gmail.com','XXXXXXXXXXXX1938','MDU78463738')");
+        db.execSQL("insert into user_table values(8382394984,'Rimjhim',4396.87,'rimjhim17@gmail.com','XXXXXXXXXXXX9684','ALO68390624')");
+        db.execSQL("insert into user_table values(5038372734,'Vidhi',6730.32,'vidhigupta@gmail.com','XXXXXXXXXXXX6392','ABC76493939')");
+    
     }
  
     @Override
