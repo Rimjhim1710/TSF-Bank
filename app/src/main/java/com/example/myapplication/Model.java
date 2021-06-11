@@ -6,7 +6,7 @@ public class Model {
     public Model() {
     }
 
-    public Model(String phoneno, String name, String balance) {
+    public Model(String phoneno, String name, String balance) { 
         this.phoneno = phoneno;
         this.name = name;
         this.balance = balance;
